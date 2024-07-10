@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100vh;
+  background: #c2c2c4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employee{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin: 9px;
+}
+.pos{ 
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.work{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  background-color: rgb(255, 255, 255);
   color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.email{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
+.personal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 9px;
+  padding: 7px;
+  gap: 3px;
+}
+.names{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.FN{
+  display: flex;
+  font-size: 34px;
+  gap: 5px;
+}
+.street{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.dress{
+  display: flex;
+  font-size: 34px;
+  gap: 45px;
+  padding-left: 40px;
+}
+.suburb{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: 4px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.city{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: -16px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.zip{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: -16px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.phone{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: -16px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.alter{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: -16px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.gmail{
+  width: 345px;
+  display: flex;
+  gap: 2cm;
+  padding: 9px 28px;
+  margin-top: -16px;
+  margin-left: 177px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;}
+.btn{
+    width: 105px;
+    display: flex;
+    gap: 2cm;
+    padding: 9px 28px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
