@@ -59,7 +59,7 @@ function AddEmployee(props) {
 
 
 
-             <button onClick={submit}className="btn">Submit</button>
+             <button onClick={submit} className="btn">Submit</button>
         </div>
     )
     
